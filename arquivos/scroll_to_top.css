@@ -1,0 +1,53 @@
+/*
+Back to top button 
+*/
+#back-top {
+	position: fixed;
+	bottom: 90px;
+	margin-left: 20px;
+	z-index:499;
+	/*IE6 hack */
+		 _position: absolute;
+		 _top:expression(documentElement.scrollTop+body.scrollTop);
+		 _margin-top: 500px;
+
+}
+body { 
+	/*IE6 hack */
+		_background: url(null) fixed ;
+}
+#back-top a,  #back-top-prev a{
+	background: url(scroll-top.png) no-repeat 0 0;
+	width: 50px;
+	height: 25px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+	padding-top: 25px;
+	
+}
+#back-top a:hover, #back-top-prev a:hover {
+	color: #fff;
+}
+/* arrow icon (span tag) */
+#back-top span#button , #back-top-prev span#button-prev{
+	display: block;
+}
+#back-top span#link {
+	display: block;
+	font-size: 11px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#back-top a:hover span#button, #back-top-prev a:hover span#button-prev {
+	opacity:1;
+	filter:alpha(opacity = 100);
+}
+#edit-scroll-to-top-preview{
+float:right;
+width:100%;
+}
